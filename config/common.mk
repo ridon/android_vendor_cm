@@ -126,7 +126,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
-    CMUpdater \
     LineageSetupWizard \
     Eleven \
     ExactCalculator \
@@ -134,6 +133,7 @@ PRODUCT_PACKAGES += \
     LiveLockScreenService \
     LockClock \
     Trebuchet \
+    Updater \
     WallpaperPicker \
     WeatherProvider
 
@@ -320,6 +320,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cm.version=$(LINEAGE_VERSION) \
     ro.cm.releasetype=$(CM_BUILDTYPE) \
+    ro.cm.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
     ro.modversion=$(LINEAGE_VERSION) \
     ro.cmlegal.url=https://lineageos.org/legal
 
