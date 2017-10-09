@@ -314,7 +314,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cm.releasetype=$(CM_BUILDTYPE) \
     ro.cm.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
     ro.modversion=$(LINEAGE_VERSION) \
-    ro.cmlegal.url=https://ridon.id/legal
+    ro.cmlegal.url=http://ridon.id/legal
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/cm/build/target/product/security/lineage
